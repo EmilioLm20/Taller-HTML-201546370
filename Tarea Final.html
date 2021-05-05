@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad Final</title>
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/united/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="card text-center">
+            <h2 class="card-title">Encuesta sobre bebidas espirituosas</h2>
+            <div class="card-body">
+              <form id="form1">
+                <!--TIPO-->
+                <div class="form-group">
+                  <label for="bebidas">Que tipo de bebida espirituosa ingiere</label>
+                  <input
+                    type="text"
+                    placeholder="Ingresa el tipo de bebida toma"
+                    class="form-control"
+                    id="bebidas"
+                  />
+                </div>
+                <!--MARCA-->
+                <div class="form-group">
+                  <label for="marca">Que marca de bebida es</label>
+                  <input
+                    type="text"
+                    placeholder="Ingresa la marca de la bebida"
+                    class="form-control"
+                    id="marca"
+                  />
+                </div>
+		            <!--PRESENTACION -->
+		            <div class="form-group">
+                  <label for="presentacion">Que presentación suele consumir</label>
+                  <input
+                    type="text"
+                    placeholder="Ingrese el tipo de presentación que consume"
+                    class="form-control"
+                    id="presentacion"
+                  />
+                </div>
+		            <!--COMENTARIO-->
+		            <div class="form-group">
+                  <label for="comentario">Alguna experiencia con ese tipo de bebida</label>
+                  <textarea
+                    id="comentario"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <!--BOTON-->
+                <button class="btn btn-dark btn-block" type="submit">
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="app.js"></script>
+  </body>
+</html>
